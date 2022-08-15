@@ -1,0 +1,63 @@
+h1{
+    color: blue;
+    align-items: center;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+table{
+    border: 1px solid black ;
+    border-collapse: collapse;
+}
+td, th{
+    border: 1px solid black;
+    padding: 5px;
+    text-align: center;
+}
+
+button{
+    width: 200;
+    height: 50;
+    font-size: 25px;
+    background-color: green;
+}
+button:hover{
+    background-color: orange;
+}
+
+#container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#container > div{
+    background-color: green;
+    font-size: 20px;
+    margin: 20px;
+    padding: 20px;
+    width: 200px;
+}
+
+.grid {
+    background-color: green;
+    display: grid;
+    padding: 20px;
+    grid-column-gap: 20px;
+    grid-row-gap: 10px;
+    grid-template-columns: 200px 200px auto;
+}
+
+.grid-item {
+    background-color: white;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+.row > div {
+    padding: 20px;
+    background-color: teal;
+    border: 2px solid black;
+}
