@@ -5,13 +5,14 @@ print(f"Hello, {name}")
 
 print("_____________________")
 
-#       Conditionsd
+#       Conditions
+
 
 n = int(input("Number: "))
 if n>0:
     print(n, "is positive")
 elif n<0:
-    print(n, "is negitve")
+    print(n, "is negative")
 else:
     print(n, " is equal to n")
 
@@ -29,10 +30,10 @@ nameList.append("Fin")
 nameList.sort()
 print(nameList)
 
-#Tupple (seuence of immutable values)
-corridinateX=10.0
-corridanateY=20.0
-corridanate = (10.0,20.0)
+#Tuple (sequence of immutable values)
+coordinateX=10.0
+confidanteY=20.0
+confidante = (10.0,20.0)
 
 #Set
 s= set()
@@ -88,7 +89,7 @@ print("_____________________")
 # import (filename) 
 # call function (filename).(function) 
 
-#       Object-Orianted (Class)
+#       Object-Oriented (Class)
 
 class Point():
     def __init__(self, input1, input2):
@@ -106,22 +107,22 @@ print("_____________________")
 class Flight():
     def __init__(self, capacity):
         self.capacity = capacity
-        self.passangers= []
+        self.passengers= []
 
-    def add_passanger(self, passanger_name):
+    def add_passenger(self, passenger_name):
         if not self.open_seat():
             return False
-        self.passangers.append(passanger_name)
+        self.passengers.append(passenger_name)
         return True
 
     def open_seat(self):
-        return self.capacity- len(self.passangers)
+        return self.capacity- len(self.passengers)
 
 flight=Flight(3)
 
 people= ["Dom", "Daniel", "Tom", "Fin"]
 for person in people:
-    if flight.add_passanger(person):
+    if flight.add_passenger(person):
         print(f"Added {person} to flight successfully ")
     else:
         print(f"No available seats for {person}")
@@ -145,7 +146,7 @@ hello()
 
 print("_____________________")
 
-# Lamda
+# Lambda
 
 people1= [
     {"name": "Harry", "house": "Gryffindor"},
